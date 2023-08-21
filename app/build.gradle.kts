@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.madl.syntify_by_gitteheino"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.madl.syntify_by_gitteheino"
@@ -29,7 +29,10 @@ android {
 
     buildFeatures{
         viewBinding = true
+        //noinspection DataBindingWithoutKapt
+        dataBinding = true
     }
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -48,8 +51,8 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.0")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.0")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
 
 
     androidTestImplementation ("androidx.test.ext:junit:1.1.5")
