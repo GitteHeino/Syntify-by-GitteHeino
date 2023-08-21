@@ -1,0 +1,36 @@
+
+Link zu Github:
+https://github.com/GitteHeino/Syntify-by-GitteHeino.git
+
+
+Marcel René Brueck an Alle (21. Aug. 2023, 11:34)
+implementation("androidx.navigation:navigation-fragment-ktx:2.7.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.0")
+
+
+id („androidx.navigation.safeargs.kotlin“)
+
+
+    saveArgs
+
+
+
+    Martin Hegel an Alle (21. Aug. 2023, 11:35)
+    buildscript {
+        ext {
+            nav_version = "2.5.3"
+        }
+        dependencies {
+            classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+        }
+    }
+
+
+Marcel René Brueck an Alle (21. Aug. 2023, 11:45)
+dependencies {
+        var nav_version = "2.7.0"
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+    }
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.0")
+        implementation("androidx.navigation:navigation-ui-ktx:2.7.0")
